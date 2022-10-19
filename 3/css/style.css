@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Silkscreen", cursive;
+  background-color: #333;
+}
+
+p {
+  font-size: 4rem;
+}
+
+.window {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.window .black-window {
+  position: absolute;
+  border-radius: 20px;
+  height: 550px;
+  width: 750px;
+  background-color: rgb(136, 129, 129);
+}
+.window .red-button {
+  position: relative;
+  top: 5%;
+  left: 5%;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  border-radius: 50%;
+}
+.window .orange-button {
+  position: relative;
+  top: 5%;
+  left: 10%;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: orange;
+  border-radius: 50%;
+}
+.window .main-window {
+  position: absolute;
+}
+.window .main-window .black-area {
+  height: 400px;
+  width: 670px;
+  background-color: black;
+}
+.window .main-window .black-area .green-text {
+  position: absolute;
+  color: green;
+  top: 5%;
+  left: 5%;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes animation {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.animation {
+  -webkit-animation: animation infinite 1s;
+          animation: animation infinite 1s;
+}

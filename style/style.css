@@ -1,0 +1,226 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero-text {
+	position: absolute;
+	color: white;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+
+.hero-text h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px #000;
+	color: #ddd;
+}
+
+.hero-text span {
+	text-transform: uppercase;
+	color: #09f;
+}
+
+.section-title {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* nawigacja */
+nav {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	line-height: 60px;
+	background-color: #ddd;
+	text-align: center;
+	z-index: 100;
+}
+
+.burger-icon {
+	margin-left: auto;
+	display: block;
+	padding: 0 30px;
+	line-height: 60px;
+	font-size: 30px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.nav-items {
+	display: none;
+}
+
+/* header */
+.header {
+	position: relative;
+	height: 330px;
+	background-image: url('../img/hero-small.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+/* main */
+main {
+	margin: 60px 0;
+}
+
+/* o nas */
+.about-us-info {
+	margin-bottom: 10px;
+	padding: 0 20px;
+}
+
+/* produkty */
+.products {
+	margin: 60px auto;
+}
+
+.product {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+.product h3 {
+	text-transform: uppercase;
+}
+
+.first-product {
+	background-image: url('https://f00.esfr.pl/foto/3/57247490553/c1ea0db821c1f61b4aadb7c0527747ba/steelseries-klawiatura-dla-graczy-steelseries-apex-3,57247490553_8.jpg');
+	transition: 0.3s;
+}
+
+.second-product {
+	background-image: url('https://m.media-amazon.com/images/I/41TlJar0WkS._AC_SX679_.jpg');
+}
+
+.third-product {
+	background-image: url('https://f00.esfr.pl/foto/7/67446112353/78a8da38468763dd4cc7c32d6d0010d4/msi-monitor-msi-optix-g241,67446112353_8.jpg');
+}
+
+.fourth-product {
+	background-image: url('https://code.visualstudio.com/assets/docs/languages/typescript/overview.png');
+}
+
+/* ? ipad */
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+
+	.nav-items {
+		display: block;
+	}
+
+	.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #333;
+		transition: color 0.3s;
+	}
+
+	.nav-items a:hover {
+		color: #09f;
+	}
+
+	.header {
+		position: relative;
+		height: 400px;
+		background-image: url('../img/hero-big.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.hero-text h1 {
+		font-size: 36px;
+	}
+
+	.hero-text p {
+		font-size: 18px;
+	}
+
+	.product h3 {
+		font-size: 24px;
+		transition: 0.3s;
+	}
+
+	.product:hover h3 {
+		transform: scale(1.5);
+	}
+
+	.product:hover h3 {
+		transform: scale(1.5);
+	}
+
+	.product:hover h3 {
+		transform: scale(1.5);
+	}
+
+	.product:hover h3 {
+		transform: scale(1.5);
+	}
+}
+
+/* kontakt */
+
+.contact {
+	text-align: center;
+}
+
+.contact h3 {
+	margin: 20px 0 5px;
+	text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+	.products-box {
+		font-size: 0;
+	}
+
+	.product {
+		display: inline-block;
+		width: 50%;
+	}
+}
+
+/* footer */
+footer {
+	padding: 30px 10px;
+	text-align: center;
+	background-color: #ddd;
+}
+
+@media (min-width: 1200px) {
+	.hero-text h1 {
+		font-size: 42px;
+	}
+
+	.hero-text p {
+		font-size: 20px;
+	}
+}
